@@ -4,13 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>corrency-coverter</title>
     <link rel="stylesheet" href="mystyle.css">
 </head>
 
 <body>
+    <header>
+        <img src="2-removebg-preview.png" alt="logo" class="logo">
+    </header>
     <form>
+        <div class="container">
+            <div class="converter-box">
+                <div class="tabs">
+                    <button class="tab-button active">Calculator Trasfer</button>
+                    <button class="tab-button">Exchange Rates</button>
+                </div>
 
+
+                <h2>Transfer Caculator</h2>
+                <p>Calculate how much your recipient will receive</p>
+
+                <label for="from">From:</label><br>
+                <select id="from-country">
+                    <option value="">--Select a country--</option>
+                    <option value="zimbabwe">Zimbabwe</option>
+                    <option value="south africa">South Africa</option>
+                    <option value="nigeria">Nigeria</option>
+                    <option value="malawi">Malawi</option>
+                </select><br><br>
+
+                <label for="to">To:</label><br>
+                <select id="to-country">
+                    <option value="">--Select a country--</option>
+                    <option value="india">India</option>
+                    <option value="china">China</option>
+                    <option value="philippness">Philippnes</option>
+                </select><br><br>
+                <p>1 USD = ₹85 | 6% fee from Zimbabwe to India</p>
+
+                <input type="number" id="number-button" required><br><br>
+                <button type="button" class="caculate-button">Caculate</button>
+            </div>
+
+        </div>
     </form>
 </body>
 
