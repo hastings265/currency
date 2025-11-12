@@ -1,5 +1,4 @@
 body {
-    background: url(3.jpg);
     background-color: #ffffff;
     color: white;
     font-family: Arial, sans-serif;
@@ -17,6 +16,8 @@ header {
 }
 
 .logo {
+    padding-top: 50px;
+    justify-content: center;
     width: 100%;
     max-width: 400px;
     height: auto;
@@ -28,10 +29,10 @@ header {
 }
 
 .converter-box {
+    width: 400px;
     background-color: #1e1e1e;
     padding: 30px;
     border-radius: 10px;
-    width: 400px;
     text-align: left;
     box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
 }
@@ -131,4 +132,29 @@ option:hover {
     background-color: #e60000;
     transform: scale(1.05);
     box-shadow: 0 0 20px rgba(255, 0, 0, 0.8);
+}
+
+@media(max-width:600px) {
+    body {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .converter-box {
+        width: 100%;
+        padding: 15px;
+    }
+    .tab-button {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+    .logo {
+        max-width: 250px;
+        margin-top: 50px;
+    }
+    #from-country,
+    #to-country {
+        width: 100%;
+        font-size: 14px;
+        padding: 10px;
+    }
 }
