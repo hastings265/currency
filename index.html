@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>corrency-coverter</title>
+    <title>currency-converter</title>
     <link rel="stylesheet" href="mystyle.css">
 </head>
 
@@ -16,15 +16,15 @@
         <div class="container">
             <div class="converter-box">
                 <div class="tabs">
-                    <button class="tab-button active">Calculator Trasfer</button>
+                    <button class="tab-button active">Calculator Transfer</button>
                     <button class="tab-button">Exchange Rates</button>
                 </div>
 
 
-                <h2>Transfer Caculator</h2>
+                <h2>Transfer Calculator</h2>
                 <p>Calculate how much your recipient will receive</p>
 
-                <label for="from">From:</label><br>
+                <label for="from-country">From:</label><br>
                 <select id="from-country">
                     <option value="">--Select a country--</option>
                     <option value="zimbabwe">Zimbabwe</option>
@@ -33,17 +33,17 @@
                     <option value="malawi">Malawi</option>
                 </select><br><br>
 
-                <label for="to">To:</label><br>
+                <label for="to-country">To:</label><br>
                 <select id="to-country">
                     <option value="">--Select a country--</option>
                     <option value="india">India</option>
                     <option value="china">China</option>
-                    <option value="philippness">Philippnes</option>
+                    <option value="philippines">Philippines</option>
                 </select><br><br>
                 <p>1 USD = ₹85 | 6% fee from Zimbabwe to India</p>
 
                 <input type="number" id="number-button" required><br><br>
-                <button type="button" class="caculate-button">Caculate</button>
+                <button type="button" class="caculate-button">Calculate</button>
             </div>
 
         </div>
