@@ -12,42 +12,60 @@
     <header>
         <img src="2-removebg-preview.png" alt="logo" class="logo">
     </header>
-    <form>
-        <div class="container">
-            <div class="converter-box">
-                <div class="tabs">
-                    <button class="tab-button active">Calculator Transfer</button>
-                    <button class="tab-button">Exchange Rates</button>
-                </div>
 
-
-                <h2>Transfer Calculator</h2>
-                <p>Calculate how much your recipient will receive</p>
-
-                <label for="from-country">From:</label><br>
-                <select id="from-country">
-                    <option value="">--Select a country--</option>
-                    <option value="zimbabwe">Zimbabwe</option>
-                    <option value="south africa">South Africa</option>
-                    <option value="nigeria">Nigeria</option>
-                    <option value="malawi">Malawi</option>
-                </select><br><br>
-
-                <label for="to-country">To:</label><br>
-                <select id="to-country">
-                    <option value="">--Select a country--</option>
-                    <option value="india">India</option>
-                    <option value="china">China</option>
-                    <option value="philippines">Philippines</option>
-                </select><br><br>
-                <p>1 USD = ₹85 | 6% fee from Zimbabwe to India</p>
-
-                <input type="number" id="number-button" required><br><br>
-                <button type="button" class="caculate-button">Calculate</button>
-            </div>
+    <div class="converter-box">
+        <div class="tabs">
+            <button class="tab-button active">Calculator Transfer</button>
 
         </div>
-    </form>
+
+
+        <h2>Transfer Calculator</h2>
+        <p>Calculate how much your recipient will receive</p>
+
+        <div class="currency-container">
+            <select id="currency-first">
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                    <option value="INR">INR</option>
+                    <option value="ZWL" selected>ZWL</option>
+                    <option value="ZAR">ZAR</option>
+                    <option value="NGN">NGN</option>
+                    <option value="MWK">MWK</option>
+                    <option value="KES">KES</option>
+                    <option value="GHS">GHS</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CAD">CAD</option>
+                    <option value="AUD">AUD</option>
+                    <option value="JPY">JPY</option>
+                </select>
+            <input type="number" id="worth-first" value="0" min="0">
+        </div>
+
+        <div class="currency-container">
+            <select id="currency-second">
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                    <option value="INR" selected>INR</option>
+                    <option value="ZWL">ZWL</option>
+                    <option value="ZAR">ZAR</option>
+                    <option value="NGN">NGN</option>
+                    <option value="MWK">MWK</option>
+                    <option value="KES">KES</option>
+                    <option value="GHS">GHS</option>
+                    <option value="GBP">GBP</option>
+                    <option value="CAD">CAD</option>
+                    <option value="AUD">AUD</option>
+                    <option value="JPY">JPY</option>
+                </select>
+            <input type="number" id="worth-second" disabled>
+        </div>
+
+        <p class="exchange-rate" id="exchange-rate"> 1 USD = 138.5802 JPY </p>
+
+
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>
